@@ -1,0 +1,91 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Arista Switch config</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="static/css/mdb.min.css" />
+    <link rel="stylesheet" href= "static/css/edit.css">
+    <link rel='home_favicon' href='/images/home_favicon.png'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+  <form id=edit_FRM action="" method="post">
+  <ul class="form-style-1">
+    <div id="login">
+      <span  style="font-size: 170%; background: inherit;" id="login_header" > User/Pass to connect the SW</span>
+          <li id="userSW_li">
+            <label id="user" >User <span class="required">*</span></label>
+            <input id="userTxt" type="text" placeholder="username" name="name" class="field-long" required/>
+          </li>
+          <li id="passSW">
+            <label id="pass" >Password <span class="required">*</span></label>
+            <input id="passTxt" type="password" placeholder="password" name="name" class="field-long" required/>
+          </li>
+          <!-- -->
+
+    </div>
+
+    <div id="addSW">
+        <span style="font-size: 170%; background: inherit;" id="addSW_header" > Adding new Switch </span>
+          <li id="name_li">
+                <label id="nameTxt" >Hostname <span class="required">*</span></label>
+                <input id="macaddr" type="text" placeholder="Switch/vlan name" name="name" class="field-long"/>
+          <li id="ip_li" >
+                <label>IP <span class="required">*</span></label>
+                <input  id="addSW_IP" type="text" placeholder="ex: 1.1.1.1" name="ip" class="field-long"/>
+            </li>
+            <li id="role_li" >
+                  <label>Role </label>
+                  <input  id="addSW_Name type="text placeholder="ex: Sleaf" name="role" class="field-long"/>
+              </li>
+            <li id="desc_li"  >
+                <label>Description </label>
+                <input  id="addSW_DESC" type="text" placeholder="Server Room" name="desc" class="field-long"/>
+            </li>
+      </div>
+
+      <div id="delSW">
+        <span style="font-size: 170%; background: inherit;" id="delSW_header" > Delete an existing switch </span>
+        <li id="userSW_li">
+          <label id="delSW" >Hostname <span class="required">*</span></label>
+          <input id="delSWIP" type="text" placeholder="Switch name" name="name" class="field-long"/>
+        </li>
+      </div>
+  </ul>
+  </form>
+  <input  id="add" type="submit" class="btn btn-primary"  value="Update" onclick="submitUserAction()" >
+  <br>
+
+
+  <script type="text/javascript" src="static/js/jquery-1.9.0.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="static/js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="static/js/edit.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+
+    <!DOCTYPE html>
+    <!-- THIS HTML IS DYNAMICALLY CREATE BY THE create_html.py DO NOT TRY TO EDIT THIS FILE -->
+
+    <script src="static/js/jquery-1.9.0.js"></script>
+    <script src="static/js/switchList.js"></script>
+    <script src="static/js/interfaceStatus.js"></script>
+
+
+    <html>
+
+    <head>
+        <link rel="stylesheet" href= "static/css/switchList.css">
+    </head>
+      <body>
+        <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+      <h2>Device List</h2>
+
+      <input type="text" id="myInput" onkeyup="searchJS()" placeholder="Search ..." title="Type in a name"/>
+
+      <table id="swTable">
+        <tr class="header">
+          <th style="width:20%;">Hostname</th>
+          <th style="width:15%;">IP Address/DNS</th>
+          <th style="width:15%;">Role</th>
+          <th style="width:50%;">Description</th>
+
+        </tr>
+    <tr><td><a onclick="get_int_status('10.100.164.122')" href="javascript:void(0);"> <h3>ats022</h3></td> <td>10.100.164.122</td><td>7160-48YC6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.116')" href="javascript:void(0);"> <h3>bko016</h3></td> <td>10.100.164.116</td><td>7060PX4-32</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.117')" href="javascript:void(0);"> <h3>bko017</h3></td> <td>10.100.164.117</td><td>7060PX4-32</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.127')" href="javascript:void(0);"> <h3>bri027</h3></td> <td>10.100.164.127</td><td>720XP-48ZC2</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.128')" href="javascript:void(0);"> <h3>bri028</h3></td> <td>10.100.164.128</td><td>720XP-48ZC2</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.108')" href="javascript:void(0);"> <h3>cal008</h3></td> <td>10.100.164.108</td><td>7050SX3-48YC12</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.109')" href="javascript:void(0);"> <h3>cal009</h3></td> <td>10.100.164.109</td><td>7050SX3-48YC12</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.110')" href="javascript:void(0);"> <h3>cal010</h3></td> <td>10.100.164.110</td><td>7050SX3-48YC12</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.118')" href="javascript:void(0);"> <h3>co018</h3></td> <td>10.100.164.118</td><td>7150S-64</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.119')" href="javascript:void(0);"> <h3>co019</h3></td> <td>10.100.164.119</td><td>7150S-64</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.120')" href="javascript:void(0);"> <h3>co020</h3></td> <td>10.100.164.120</td><td>7150S-64</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.121')" href="javascript:void(0);"> <h3>co021</h3></td> <td>10.100.164.121</td><td>7150S-64</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.129')" href="javascript:void(0);"> <h3>gd029</h3></td> <td>10.100.164.129</td><td>7260CX3-64</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.137')" href="javascript:void(0);"> <h3>gt037</h3></td> <td>10.100.164.137</td><td>7280SR2-48YC6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.138')" href="javascript:void(0);"> <h3>gt038</h3></td> <td>10.100.164.138</td><td>7280SR2-48YC6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.135')" href="javascript:void(0);"> <h3>hs035</h3></td> <td>10.100.164.135</td><td>7280SR-48C6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.136')" href="javascript:void(0);"> <h3>hs036</h3></td> <td>10.100.164.136</td><td>7280SR-48C6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.144')" href="javascript:void(0);"> <h3>hss044</h3></td> <td>10.100.164.144</td><td>7280SRA-48C6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.139')" href="javascript:void(0);"> <h3>hts039</h3></td> <td>10.100.164.139</td><td>7280TRA-48C6</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.101')" href="javascript:void(0);"> <h3>ld001</h3></td> <td>10.100.164.101</td><td>7050CX3-32S</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.102')" href="javascript:void(0);"> <h3>ld002</h3></td> <td>10.100.164.102</td><td>7050CX3-32S</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.103')" href="javascript:void(0);"> <h3>ld003</h3></td> <td>10.100.164.103</td><td>7050CX3-32S</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.104')" href="javascript:void(0);"> <h3>ld004</h3></td> <td>10.100.164.104</td><td>7050CX3-32S</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.105')" href="javascript:void(0);"> <h3>ld005</h3></td> <td>10.100.164.105</td><td>7050CX3-32S</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('ld412')" href="javascript:void(0);"> <h3>ld412</h3></td> <td>ld412</td><td>7050CX3-32S</td>   <td>US-LAB - PlaytikaPOC</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.132')" href="javascript:void(0);"> <h3>lp032</h3></td> <td>10.100.164.132</td><td>7280QR-C36</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.133')" href="javascript:void(0);"> <h3>lp033</h3></td> <td>10.100.164.133</td><td>7280QR-C36</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.134')" href="javascript:void(0);"> <h3>lp034</h3></td> <td>10.100.164.134</td><td>7280QR-C36</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.127')" href="javascript:void(0);"> <h3>mid023</h3></td> <td>10.100.164.127</td><td>7170-32CD</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.112')" href="javascript:void(0);"> <h3>mrv012</h3></td> <td>10.100.164.112</td><td>7050SX3-48YC8</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('mrv379')" href="javascript:void(0);"> <h3>mrv379</h3></td> <td>mrv379</td><td>7050SX3-48YC8</td>   <td>US-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.147')" href="javascript:void(0);"> <h3>pm047</h3></td> <td>10.100.164.147</td><td>7020SR-24C2</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.106')" href="javascript:void(0);"> <h3>psp006</h3></td> <td>10.100.164.106</td><td>7050SX2-72Q</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.113')" href="javascript:void(0);"> <h3>ptt013</h3></td> <td>10.100.164.113</td><td>7050TX-72Q</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.114')" href="javascript:void(0);"> <h3>ptt014</h3></td> <td>10.100.164.114</td><td>7050TX-72Q</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.115')" href="javascript:void(0);"> <h3>ptt015</h3></td> <td>10.100.164.115</td><td>7050TX-72Q</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.124')" href="javascript:void(0);"> <h3>roi024</h3></td> <td>10.100.164.124</td><td>720XP-24ZY4</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.125')" href="javascript:void(0);"> <h3>roi025</h3></td> <td>10.100.164.125</td><td>720XP-24ZY4</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.126')" href="javascript:void(0);"> <h3>roi026</h3></td> <td>10.100.164.126</td><td>720XP-24ZY4</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.130')" href="javascript:void(0);"> <h3>smv030</h3></td> <td>10.100.164.130</td><td>7280CR3K-32P4</td>   <td>EMEA-LAB</td></tr>
+<tr><td><a onclick="get_int_status('10.100.164.131')" href="javascript:void(0);"> <h3>smv031</h3></td> <td>10.100.164.131</td><td>7280CR3K-32P4</td>   <td>EMEA-LAB</td></tr>
+
+      </table>
+
+
+      </body>
+      </html>
+    

@@ -1,0 +1,43 @@
+
+<script language="JavaScript" type="text/javascript" src="static/js/jquery-1.9.0.js"></script>
+<script language="JavaScript" type="text/javascript" src="static/js/main.js"></script>
+<script language="JavaScript" type="text/javascript" src="static/js/edit.js"></script>
+<head>
+    <link rel="stylesheet" href= "static/css/main.css">
+
+</head>
+
+<body>
+    <div class="main-header">
+      <div class="header-navbar">
+        <p1> Arista Web GUI</p1>
+          <img src="static/img/logo_arista.png" style="height: 17px; margin-left: 17px; margin-right: 20px; padding-top: 19px;">
+            <div class="navbar-right">
+            </div>
+      </div>
+    </div>
+
+      <div class="navbar_container">
+                    <div class="nav-menu">
+                      <ul class="nav nav-stacked">
+                        <li class="nav-menu-heading-1" onclick="loadpage('switchList');" >SW List</li>
+                        <li class="nav-menu-heading-1" onclick="loadpage('logs')" >Logs</li>
+                        <li class="nav-menu-heading-1"  >Config</li>
+                        <ul class="submenu">
+                          <li><a onclick="config('login')">&emsp; SW Login</a></li>
+                          <li><a onclick="config('addSW')">&emsp; Add SW</a></li>
+                          <li><a onclick="config('delSW')">&emsp; Del SW</a></li>
+                          <li><a onclick="clearLogs()">&emsp; Clear logs</a></li>
+
+                        </ul>
+                        <li><a onclick="viewUser()">View Saved User</a></li>
+                        <li class="nav-menu-heading-1" onclick="loadpage('help')" >Help</li>
+                      </ul>
+                    </div>
+        </div>
+
+    <div id='div_center' class='div_center'>
+    <img src="static/img/logo_arista.png" alt="" />
+
+    </div>
+</body>

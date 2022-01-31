@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Arista Web GUI</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="static/css/mdb.min.css" />
+    <link rel="stylesheet" href="static/css/interfaceStatus.css" />
+
+  </head>
+  <body>
+    <!-- Start your project here-->
+  
+
+    <!-- Editable Interface table -->
+<div class="card">
+  <h15 id="int_table_header_id">Please wait, gathering information from the switch...</h15>
+
+  <div class="card-body">
+    <button  id="update_int_status_ID" type="button" class="btn btn-primary" onclick="update_int_status()" >Refresh View</button>
+    <button id="set_cfg_ID" type="button" class="btn btn-primary" onclick="set_cfg()" >Update</button>
+
+    <div id="int_table" class="table-editable">
+      <!-- 
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>-->
+      <table id="int_table_ID" class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Check this to update config" >Update</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface name" >Interface</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface Description">Description</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface Admin Status">Admin Status</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface Operational Status">Oper Status</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface BW">BW (Gbps)</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface Mode">Mode</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="Interface Trunk native Vlan">Native Vlan</th>
+            <th class="text-center" data-mdb-toggle="tooltip" title="When Mode is Acess/Trunk use Vlan/Vlan-range, when mode is L3 use x.x.x.x/xx">Vlan /IP Address</th>
+           <!-- <th colspan="2" class="text-center" data-mdb-toggle="tooltip" title="In the eBGP underlay design, the spine switches are configured within a single AS ">Phone Vlan</th> -->
+            <th  class="text-center" data-mdb-toggle="tooltip" title="Phone vlan incase phone is connected to this port, if phone config is not supported on this plat just write 'no' ">Phone Vlan</th>
+            <th  class="text-center" data-mdb-toggle="tooltip" title="LLDP neigbhor Devices ">Connected Devices</th>
+
+          </tr>
+        </thead>
+        <tbody>
+           
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- SPinners -->
+      <div  id="spinner1">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div id="spinner2"  class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+      </div>
+      <!-- 
+      <iframe id='wait_iframe' src="waiting" height="300" width="300" title="Iframe Example"></iframe>
+        -->
+    </div>
+    <button  id="update_int_status_ID2" type="button" class="btn btn-primary" onclick="update_int_status()" >Refresh View</button>
+    <button id="set_cfg_ID" type="button" class="btn btn-primary" onclick="set_cfg()" >Update</button>
+
+  </div>
+</div>
+
+
+      <!-- 
+      <button  id="update_int_status_ID" type="button" class="btn btn-primary" onclick="update_int_status()" >Refresh View</button>
+      <button id="set_cfg_ID" type="button" class="btn btn-primary" onclick="set_cfg()" >Update</button>
+        -->
+          
+    <!-- End your project here-->
+
+    <script type="text/javascript" src="static/js/jquery-1.9.0.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="static/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="static/js/int_table.js"></script>
+    <script type="text/javascript" src="static/js/interfaceStatus.js"></script>
+
+  </body>
+</html>
