@@ -1,0 +1,232 @@
+body {
+  color: #38414b;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+
+
+}
+
+.header-navbar {
+  flex-direction: row;
+  align-items: center;
+  background-color: #27569b;
+  height: 55px;
+  justify-content: space-between;
+  min-height: 45px;
+}
+
+
+img {
+  float: left;
+  width: 5%;
+  height: 17px;
+  margin-left: 17px;
+  margin-right: 20px;
+  padding-top: 6px;
+
+}
+
+.navbar_container {
+      height: 100%;
+      border-right: solid 0.5px grey;
+      width: 250px;
+      padding-top: 1px;
+      position: absolute;
+}
+
+
+
+
+.nav-menu {
+    line-height: 50px;
+      padding-left: 5px;
+      font-size: 20px;
+      font-family: Helvetica, Arial, sans-serif;
+      cursor: pointer;
+}
+
+
+.nav-stacked {
+    list-style: none;
+}
+
+
+
+.main_footer {
+      height: 45px;
+      background: #3a6593;
+      width: 100%;
+      margin: auto;
+      bottom: 0px;
+      position: fixed;
+}
+
+.div_center {
+      position: relative;
+      width: 83%;
+      left: 16%;
+      padding-top: 35px;
+      padding-bottom: 20px;
+      overflow-y:scroll;
+
+}
+
+
+ul{
+    padding: 0;
+    list-style: none;
+    background: white;
+}
+ul li{
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+  }
+
+ul li a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+ul li a:hover{
+    display: block;
+}
+
+ul li:hover{
+    color: #black;
+    background: #f0f2f4;
+    display: block;
+}
+
+
+ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background: white;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block; /* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;
+    padding-top: 20px;
+
+}
+
+ul li ul li{
+    display: block;
+}
+
+
+h3 {
+    float: left;
+    color: white;
+    padding-left: 10px;
+    line-height: 8px;
+}
+
+h4 {
+    float: right;
+    color: white;
+    padding-right: 10px;
+    line-height: 8px;
+}
+
+.login-text {
+
+  position: relative;
+  float: right;
+  color: white;
+  top: -14px;
+  right: 20px;
+}
+
+.navbar-right {
+  float: right;
+  position: relative;
+  width: 300px;
+}
+
+h4 {
+  font-size: 14px;
+  color: pink;
+  position: relative;
+  padding-left: 40px;
+  margin-left: 7px;
+  top: 0px;
+}
+
+.text_name {
+  font-size: 14px;
+      color: white;
+      position: relative;
+      padding-left: 40px;
+      margin-left: 7px;
+      top: 25px;
+      font-weight: bold;
+
+
+}
+
+.button_logout {
+  font-size: 14px;
+  color: white;
+  position: relative;
+  top: 8px;
+  background-color: transparent;
+  border: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  padding-left: -9px;
+  margin-left: 10px;
+}
+
+
+
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+p1 {
+  text-align: center;
+	color:#ffffff;
+  font-size:47px;
+}
+
+
+.main-header{
+  text-align: center;
+
+}
+
+.footer{
+    margin-bottom: 3em;
+    position: fixed;
+}
